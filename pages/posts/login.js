@@ -1,4 +1,6 @@
 import { Flex,Heading,Input,Button,useColorMode,useColorModeValue } from "@chakra-ui/react"
+import styles from './layout.module.css'
+import Link from 'next/link'
 import { ChakraProvider } from "@chakra-ui/react"
 
 export default function IndexPage({ }) {
@@ -12,7 +14,13 @@ export default function IndexPage({ }) {
                     <Input placeholder="*************" variant="filled" mb={6} type="password"  />
                     <Button colorScheme="teal"> Log in </Button>
                     <Button onClick={toggleColorMode}> Dark Mode</Button>
+                    <div className={styles.backToHome}>
+                        <Link href="/">
+                            <a>← Back to home</a>
+                        </Link>
+                    </div>
                 </Flex>
+                
            </Flex>
     
   }
