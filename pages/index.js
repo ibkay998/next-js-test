@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 import firebase from '../firebase/firebase'
+import WriteToCloudFiresore from '../firebase/firestore'
 import { getUser } from '../firebase/users'
 
 firebase()
@@ -31,6 +32,7 @@ export default function Home({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         
         <h2 className={utilStyles.headingLg}>Blog</h2>
+        <WriteToCloudFiresore/>
         <Link href={`/posts/login`}>
           <a>Login</a>
         </Link>
