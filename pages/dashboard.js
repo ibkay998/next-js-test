@@ -5,7 +5,6 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 import firebase from '../firebase/firebase'
-import { getUser } from '../firebase/users'
 import {
     Breadcrumb,
     BreadcrumbItem,

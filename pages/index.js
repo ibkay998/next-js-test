@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Date from '../components/date'
 import firebase from '../firebase/firebase'
 import WriteToCloudFiresore from '../firebase/firestore'
-import { getUser } from '../firebase/users'
+
 
 firebase()
 
