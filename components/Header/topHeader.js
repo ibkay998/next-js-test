@@ -10,6 +10,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import Link from 'next/link'
+// import Script from 'next/script'
 
 const name = 'Ibukunoluwa Oyeniyi'
 export const siteTitle = 'Next.js Sample Website'
@@ -19,6 +20,11 @@ export default function Navbar({ children, home }) {
     <div >
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://sdk.minepi.com/pi-sdk.js">
+        
+                {Pi.init({ version: "2.0" })}
+
+        </script>
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -33,26 +39,9 @@ export default function Navbar({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header >
-        { 
-            <div>
-              <Breadcrumb separator="-">
-                <BreadcrumbItem>
-                    <BreadcrumbLink href="#">Home</BreadcrumbLink>
-                </BreadcrumbItem>
-
-                <BreadcrumbItem>
-                    <BreadcrumbLink href="#">About</BreadcrumbLink>
-                </BreadcrumbItem>
-
-                <BreadcrumbItem isCurrentPage>
-                    <BreadcrumbLink href="#">Contact</BreadcrumbLink>
-                </BreadcrumbItem>
-            </Breadcrumb>
-                    
-            </div>
-        }
+        
       </header>
-      
+        <body>{children}</body>
       {!home && (
         <div >
           <Link href="/">

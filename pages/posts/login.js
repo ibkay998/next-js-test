@@ -1,6 +1,7 @@
 import { Flex,Heading,Input,Button,useColorMode,useColorModeValue } from "@chakra-ui/react"
 import styles from './layout.module.css'
 import Link from 'next/link'
+
 import { ChakraProvider } from "@chakra-ui/react"
 
 export default function IndexPage({ }) {
