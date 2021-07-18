@@ -13,3 +13,9 @@
   .backToHome {
     margin: 3rem 0 0;
   }
+
+  .navbar{
+    width: 100%;
+    height: 12px;
+    color: aqua;
+  }

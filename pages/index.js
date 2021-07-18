@@ -1,8 +1,13 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
+import firebase from '../firebase/firebase'
+import { getUser } from '../firebase/users'
+
+firebase()
 
 import { getSortedPostsData } from '../lib/posts'
 
@@ -16,6 +21,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  
+
   return (
     <Layout home>
       {/* Keep the existing code here */}
