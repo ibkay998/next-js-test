@@ -20,11 +20,6 @@ export default function Navbar({ children, home }) {
     <div >
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://sdk.minepi.com/pi-sdk.js">
-        
-                {Pi.init({ version: "2.0" })}
-
-        </script>
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
