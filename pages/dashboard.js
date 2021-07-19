@@ -15,12 +15,5 @@ import {
 export default function Dashboard({ allPostsData }) {
   
     return (
-      <Navbar home>
-          <Breadcrumb>
-            <BreadcrumbItem>Home</BreadcrumbItem>
-            <BreadcrumbItem>Dashboard</BreadcrumbItem>
-            <BreadcrumbItem>About Us</BreadcrumbItem>
-          </Breadcrumb>
-      </Navbar>
-      
+      <Navbar home user/>
     )}

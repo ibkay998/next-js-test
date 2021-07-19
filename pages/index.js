@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
+import Navbar from '../components/Header/topHeader'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
@@ -26,6 +27,7 @@ export default function Home({ allPostsData }) {
 
   return (
     <Layout home>
+      
       {/* Keep the existing code here */}
 
       {/* Add this <section> tag below the existing <section> tag */}

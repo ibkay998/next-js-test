@@ -6,14 +6,14 @@ const WriteToCloudFiresore = () => {
 
     const sendData = () => {
         try{
-            firebase.firestore().collection("mycollection").doc("my_document").set({
+            firebase.firestore().collection("collection").doc("document").set({
                 Timestamp: "17/06/2021 10:18:30",
                 Color: "Black, Or Blue",
-                Product: "M",
+                Product: "W",
                 Your: "Awoyode Taiwo Oluwatomi",
                 Fellowship: "Christ Apostolic Church Youth Fellowship (CACYOF)",
                 Phone: 8161554477,
-                Email: "oluwatomi19@gmail.com",
+                Email: "oluwatomi9@gmail.com",
                 Preferred: "Phone, Email",
                 Questions: ""
                 }).then(alert("data was succesfully sent to cloud firestore"))

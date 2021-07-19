@@ -1,4 +1,5 @@
 import { Box } from "@chakra-ui/react"
+import { Grid, GridItem } from "@chakra-ui/react"
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -13,30 +14,38 @@ import Link from 'next/link'
 // import Script from 'next/script'
 
 const name = 'Ibukunoluwa Oyeniyi'
+const isloggedout= 'None'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Navbar({ children, home }) {
+export default function Navbar({ children, user,home}) {
   return (
     <div >
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-      <header >
-        
-      </header>
-        <body>{children}</body>
+       <Box w="100%" bg="teal.500" h="30px">
+       <Breadcrumb float="right">
+            <BreadcrumbItem>
+                <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem>
+                <BreadcrumbLink href="/dashboard">Dashboard</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem >
+                <BreadcrumbLink href="/aboutus">About us</BreadcrumbLink>
+            </BreadcrumbItem>
+            
+            <BreadcrumbItem >
+            <BreadcrumbLink action={isloggedout}>
+                {!user ? (
+                <p>Login</p> )
+                : <p>Logout</p>
+
+                }
+                </BreadcrumbLink>
+            </BreadcrumbItem>
+          
+        </Breadcrumb>
+       </Box>
       {!home && (
         <div >
           <Link href="/">
