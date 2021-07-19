@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myFirstFont;
+  src: local("public\font\Domino.otf");
+}
+
 .container{
   width: 100%;
 }
@@ -17,9 +22,36 @@
   .backToHome {
     margin: 3rem 0 0;
   }
-
+.boxna{
+  margin-top: 20px;
+  width: 100%;
+  
+}
   .navbar{
     width: 100%;
-    height: 12px;
     color: aqua;
+  }
+
+  .logoname {
+    font-family: "Domino";
+    font-size: 41px;
+    display: inline;
+    float: left;
+
+  }
+  .logoname li{
+    font-family: "Domino";
+    font-size: 20px;
+    display: inline;
+    float: left;
+    list-style: none;
+  }
+  .nav {
+    padding-top: 5px;
+    padding-left: 20px;
+    float: left;
+  }
+  .nav li{
+    padding-top: 13px;
+    padding-left: 20px;
   }
