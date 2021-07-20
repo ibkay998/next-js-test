@@ -40,7 +40,12 @@ img {
   font-family: "Roboto";
 }
 
+.sidebar-container1{
+  height: 100%;  
+  border-right: 3px solid grey;
+}
 .sidebar-container div{
+  
   padding-left:80px;
   
 }

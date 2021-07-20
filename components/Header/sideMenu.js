@@ -54,6 +54,7 @@ export default function SideMenu({ children, user,home}) {
             justifyContent="space-between"
         >
             <Flex
+                className="sidebar-container1"
                 flexDir="column"
                 as="nav"
             >
