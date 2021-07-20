@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006 -s public --ci",
+    "build-storybook": "build-storybook -s public",
+    "prepare": "husky install",
+    "clean": "prettier --write"
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^2.0.1",
@@ -27,5 +31,20 @@
     "react-icons": "^4.2.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/node-logger": "^6.3.4",
+    "@storybook/react": "^6.3.4",
+    "husky": "^7.0.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2"
+    
+  },
+  "lint-staged": {
+    "*.{js,css,md,ts,tsx,json}": "prettier --write"
   }
 }
