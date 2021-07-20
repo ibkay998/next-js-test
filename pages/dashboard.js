@@ -29,7 +29,7 @@ export default function Dashboard({ allPostsData }) {
             <GridItem h="827px" w="288px" rowSpan={1} colSpan={1} >
                 <SideMenu/>
             </GridItem>
-            <GridItem bg="blue" rowSpan={1} colSpan={3}></GridItem>
+            <GridItem borderRadius= "30px" className="main-container"  bg="blue" rowSpan={1} colSpan={3}></GridItem>
           
         </Grid>
 

@@ -73,3 +73,8 @@ img {
 .active-icon {
   color: #B57295 !important;
 }
+
+.main-container{
+  
+  margin-top: 20px;
+}
