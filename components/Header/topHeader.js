@@ -1,6 +1,9 @@
 import { Box } from "@chakra-ui/react"
 import { Grid, GridItem } from "@chakra-ui/react"
 import styles from "../layout.module.css"
+
+import { IconButton,SearchIcon,PhoneIcon,Menu } from "@chakra-ui/react"
+import { Input,InputGroup,InputLeftElement } from "@chakra-ui/react"
 import { Flex,Avatar, Wrap, WrapItem, AvatarBadge, AvatarGroup } from "@chakra-ui/react"
 import {
     Breadcrumb,
@@ -24,35 +27,36 @@ export default function Navbar({ children, user,home}) {
        <Flex  className={styles.boxna}>
            <Wrap float="left">
                 <WrapItem>
-                    <Avatar name="pi survey" src="public\images\profile.jpg" alt="couldn't find image"/>
+                    <p className={styles.logoname}>PISURV</p>
+                </WrapItem>
+
+                <WrapItem >
+                    <InputGroup className={styles.searchinput}>
+                        <InputLeftElement
+                            pointerEvents="none"
+                            color="gray.300"
+                            fontSize="1.2em"
+                            children="#"/>
+                        <Input w="400px" type="tel" placeholder="Search" />
+                    </InputGroup>
                 </WrapItem>
            </Wrap>
-           <p className={styles.logoname}>PISURV</p>
            
-        <Breadcrumb className={styles.nav}>
-                <BreadcrumbItem>
-                    <BreadcrumbLink href="/">Home</BreadcrumbLink>
-                </BreadcrumbItem>
 
-                <BreadcrumbItem>
-                    <BreadcrumbLink href="/dashboard">Dashboard</BreadcrumbLink>
-                </BreadcrumbItem>
 
-                <BreadcrumbItem >
-                    <BreadcrumbLink href="/aboutus">About us</BreadcrumbLink>
-                </BreadcrumbItem>
+        
+           
+                {/* <ol>
+                    <Menu>Notification</Menu>
+                    <Link href="/">
+                        Login
+                    </Link>
+                </ol> */}
                 
-                <BreadcrumbItem >
-                <BreadcrumbLink action={isloggedout}>
-                    {!user ? (
-                    <p>Login</p> )
-                    : <p>Logout</p>
-
-                    }
-                    </BreadcrumbLink>
-                </BreadcrumbItem>
+                
+               
             
-            </Breadcrumb>
+            
        </Flex>
 
   )

@@ -23,7 +23,9 @@
     margin: 3rem 0 0;
   }
 .boxna{
-  margin-top: 20px;
+  margin-top: 0px;
+  background-color: #FCFCFC;
+  border-bottom: 3px solid grey;
   width: 100%;
   
 }
@@ -33,14 +35,17 @@
   }
 
   .logoname {
-    font-family: "Domino";
-    font-size: 41px;
+    padding-top:22px ;
+    font-family:"Roboto";
+    font-size: 28px;
+    margin-left: 96px;
+    color: #9A249C;
     display: inline;
     float: left;
 
   }
   .logoname li{
-    font-family: "Domino";
+    font-family: "Roboto";
     font-size: 20px;
     display: inline;
     float: left;
@@ -49,9 +54,21 @@
   .nav {
     padding-top: 5px;
     padding-left: 20px;
+    margin-left:10px;
     float: left;
   }
   .nav li{
     padding-top: 13px;
     padding-left: 20px;
+  }
+  .nav a:hover{
+      text-decoration: none;
+      border-bottom: 3px solid;
+      padding: 0;
+      margin: 0;
+  }
+
+  .searchinput{
+    margin-top: 19px;
+    margin-left: 100px;
   }
