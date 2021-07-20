@@ -1,5 +1,14 @@
 import React, { useState } from 'react'
 import {
+    Drawer,
+    DrawerBody,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerOverlay,
+    DrawerContent,
+    DrawerCloseButton,
+  } from "@chakra-ui/react"
+import {
     Flex,
     Heading,
     Avatar,
@@ -61,6 +70,7 @@ export default function SideMenu({ children, user,home}) {
                     </Flex>
                 </Heading>
                 <Flex
+                    className="sidebar-container"
                     flexDir={["row", "row", "column", "column", "column"]}
                     align={["center", "center", "center", "flex-start", "flex-start"]}
                     wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
@@ -68,10 +78,10 @@ export default function SideMenu({ children, user,home}) {
                 >
                     <Flex className="sidebar-items" mr={[2, 6, 0, 0, 0]}>
                         <Link display={["none", "none", "flex", "flex", "flex"]}>
-                            <Icon as={FiHome} fontSize="2xl" className="active-icon" />
+                            <Icon as={FiHome}  className="active-icon" />
                         </Link>
                         <Link _hover={{ textDecor: 'none' }} display={["flex", "flex", "none", "flex", "flex"]}>
-                            <Text className="active">Home</Text>
+                            <Text className="active" color="black">OVERVIEW</Text>
                         </Link>
                     </Flex>
                     <Flex className="sidebar-items" mr={[2, 6, 0, 0, 0]}>
@@ -79,7 +89,7 @@ export default function SideMenu({ children, user,home}) {
                             <Icon as={FiPieChart} fontSize="2xl" />
                         </Link>
                         <Link _hover={{ textDecor: 'none' }} display={["flex", "flex", "none", "flex", "flex"]}>
-                            <Text>Credit</Text>
+                            <Text>SURVEY</Text>
                         </Link>
                     </Flex>
                     <Flex className="sidebar-items" mr={[2, 6, 0, 0, 0]}>
@@ -87,14 +97,14 @@ export default function SideMenu({ children, user,home}) {
                             <Icon as={FiDollarSign} fontSize="2xl" />
                         </Link>
                         <Link _hover={{ textDecor: 'none' }} display={["flex", "flex", "none", "flex", "flex"]}>
-                            <Text>Wallet</Text>
+                            <Text>HISTORY</Text>
                         </Link>
                     </Flex>
                     <Flex className="sidebar-items" mr={[2, 6, 0, 0, 0]}>
                         <Link display={["none", "none", "flex", "flex", "flex"]}>
                             <Icon as={FiBox} fontSize="2xl" /></Link>
                         <Link _hover={{ textDecor: 'none' }} display={["flex", "flex", "none", "flex", "flex"]}>
-                            <Text>Services</Text>
+                            <Text>SETTINGS</Text>
                         </Link>
                     </Flex>
                 </Flex>

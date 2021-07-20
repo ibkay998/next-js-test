@@ -25,7 +25,7 @@ export default function Dashboard({ allPostsData }) {
             gap={1}
             >
             <GridItem rowSpan={1} colSpan={2} ><Navbar home user/></GridItem>
-            <GridItem h="827px" w="288px" rowSpan={2} colSpan={1} bg="papayawhip">
+            <GridItem h="827px" w="288px" rowSpan={2} colSpan={1} >
                 <SideMenu/>
             </GridItem>
           
