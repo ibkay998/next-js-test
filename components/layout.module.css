@@ -12,7 +12,10 @@
     padding: 0 1rem;
     margin: 3rem auto 6rem;
   }
-  
+
+/* .appname{
+  margin-top: 30px;
+} */
   .header {
     display: flex;
     flex-direction: column;
@@ -23,7 +26,6 @@
     margin: 3rem 0 0;
   }
 .boxna{
-  margin-top: 0px;
   background-color: #FCFCFC;
   border-bottom: 3px solid grey;
   width: 100%;
@@ -68,7 +70,6 @@
       margin: 0;
   }
 
-  .searchinput{
-    margin-top: 19px;
-    margin-left: 100px;
-  }
+  /* .searchinput{
+    
+  } */

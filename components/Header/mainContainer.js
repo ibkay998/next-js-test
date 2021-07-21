@@ -46,7 +46,7 @@ import {
 
 export default function MainContainer({ children, user,home}) {
     return (
-        <Flex className="main-container" bg="blue" h="657" >
+        <Flex className="main-container" h="657" >
 
             <Text></Text>
             

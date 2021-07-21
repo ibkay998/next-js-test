@@ -26,10 +26,10 @@ export default function Dashboard({ allPostsData }) {
             gap={0}
             >
             <GridItem rowSpan={1} colSpan={4} ><Navbar home user/></GridItem>
-            <GridItem h="827px" w="288px" rowSpan={1} colSpan={1} >
+            <GridItem display={["none", "none","flex","flex","flex"]} h="827px" w="288px" rowSpan={1} colSpan={1} >
                 <SideMenu/>
             </GridItem>
-            <GridItem borderRadius= "30px" className="main-container"  bg="blue" rowSpan={1} colSpan={3}></GridItem>
+            <GridItem borderRadius= "30px" className="main-container" float="left" bg="blue" >ibk</GridItem>
           
         </Grid>
 

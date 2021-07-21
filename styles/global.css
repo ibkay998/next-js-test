@@ -27,11 +27,14 @@ img {
   margin-bottom: 1.5em;
 }
 
-@media only screen and (max-width: 767px) {
-  .sidebar-items {
-    margin-bottom: 0 !important;
+
+  .main-container {
+      float: left!important;
+      background-color: red;
   }
-}
+
+
+
 
 .sidebar-items {
   
@@ -40,10 +43,19 @@ img {
   font-family: "Roboto";
 }
 
+
+
 .sidebar-container1{
-  height: 100%;  
-  border-right: 3px solid grey;
+  
+  padding-right: 91px;
+
 }
+@media only screen and (max-width: 1239px) {
+  .sidebar-container2{
+    border-right: none;
+  }
+}
+
 .sidebar-container div{
   
   padding-left:80px;
