@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { Grid, GridItem } from "@chakra-ui/react";
 import styles from "../layout.module.css";
+import PhoneMenu from './phoneMenu'
 import { useState, } from "react"
 import { useDisclosure } from "@chakra-ui/react"
 import {React} from "react"
@@ -67,22 +68,15 @@ export default function Navbar({ children, user, home }) {
   
   
   return (
-    <Flex className={styles.boxna}>
+    <Flex >
         <Head><meta name="viewport" content="width=device-width, initial-scale=1.0"/></Head>
         
         <IconButton icon={<FiMenu/>} display={["flex","flex","none","none","none"]}colorScheme="blue" onClick={onOpen} mt="33px" ml={[4,4,14,14,14]} bg="#9A249C">
           Open
         </IconButton>
-        <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
+        <Drawer  placement={placement} onClose={onClose} isOpen={isOpen} w="30vw">
           <DrawerOverlay />
-          <DrawerContent>
-            <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
-            <DrawerBody>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-            </DrawerBody>
-          </DrawerContent>
+          <PhoneMenu className="finditout"/>
         </Drawer>
         
         <Text className={styles.appname} mt={[10]} ml={[2]} color="#9A249C" fontFamily="Robot" fontSize="24px" fontWeight="bold">PISURV</Text>

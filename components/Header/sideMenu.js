@@ -66,14 +66,14 @@ export default function SideMenu({ children, user,home}) {
                 
                 <Heading
                     mt={50}
-                    mb={[25, 50, 100]}
-                    fontSize={["4xl", "4xl", "2xl", "3xl", "4xl",]}
-                    alignSelf="center"
-                    letterSpacing="tight"
+                    mb={[25, 50, 50]}
+
+                    
+                    
                 >
-                    <Flex flexDir="column" alignItems="center" mb={10} mt={5}>
-                        <Avatar my={2} src="avatar-1.jpg" />
-                        <Text textAlign="center">Calvin West</Text>
+                    <Flex flexDir="column" alignItems="center"  mb={10} mt={5}>
+                        <Avatar ml={75} size="2xl" src="avatar-1.jpg" />
+                        <Text w={200} ml={55} >Calvin West</Text>
                     </Flex>
                 </Heading>
                 <Flex

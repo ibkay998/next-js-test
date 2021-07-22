@@ -1,0 +1,14 @@
+//how to use state to display something
+{size === "full"
+              ? `You're trapped 😆 , refresh the page to leave or press 'Esc' key.`
+              : null}
+
+how to use map to display several objects when not knowing the number of objects
+const sizes = ["xs", "sm", "md", "lg", "xl", "full"]
+{sizes.map((size) => (
+        <Button
+          onClick={() => handleClick(size)}
+          key={size}
+          m={4}
+        >{`Open ${size} Drawer`}</Button>
+      ))}
