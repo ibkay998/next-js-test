@@ -31,11 +31,39 @@ img {
   .main-container {
       float: left!important;
       background-color: red;
+      
   }
 
 
+.homepage nav{
+  margin-top: 6px;
+  margin-left: 6px;
+  
 
+}
+.homepage li{
+  color: white;
+  padding-left: 15px;
+  display:inline;
+}
+.fancyimage{
+  position: relative;
+  left: 35%
+}
+.homepage{
+  min-height: 100%;
+  
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100%;
+	
+  /* Set up positioning */
+  top: 0;
+  left: 0;
 
+  background-image: linear-gradient(#56094E, purple);
+}
 .sidebar-items {
   
   color: gray;
