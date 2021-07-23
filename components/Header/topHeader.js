@@ -76,7 +76,7 @@ export default function Navbar({ children, user, home }) {
         </IconButton>
         <Drawer  placement={placement} onClose={onClose} isOpen={isOpen} w="30vw">
           <DrawerOverlay />
-          <PhoneMenu className="finditout"/>
+          <PhoneMenu/>
         </Drawer>
         
         <Text className={styles.appname} mt={[10]} ml={[2]} color="#9A249C" fontFamily="Robot" fontSize="24px" fontWeight="bold">PISURV</Text>

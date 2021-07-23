@@ -7,6 +7,8 @@ import {
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
+    Grid,
+    GridItem,
   } from "@chakra-ui/react"
 import {
     Flex,
@@ -46,11 +48,20 @@ import {
 
 export default function MainContainer({ children, user,home}) {
     return (
-        <Flex className="main-container" h="657" >
-
-            <Text></Text>
-            
-        </Flex>
-
-    )
+      <Flex flexDirection="column" w="100%">
+        <Box textAlign="center">
+          <Text my="6px" fontSize="24px" fontFamily="Roboto" fontWeight="100">
+            Welcome Obiofiong
+          </Text>
+          <Text my="6px" fontSize="15px" fontFamily="Roboto" fontWeight="100">
+            Total Surveys taken
+          </Text>
+          <Text my="6px" fontSize="15px" fontFamily="Roboto" fontWeight="100">
+            Amount of pi earned
+          </Text>
+        </Box>
+        <Box>ibk</Box>
+        <Box>ibk</Box>
+      </Flex>
+    );
     }

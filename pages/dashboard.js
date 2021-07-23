@@ -8,31 +8,30 @@ import Link from 'next/link'
 import Date from '../components/date'
 import firebase from '../firebase/firebase'
 import {
+    Box,
     Grid,
     GridItem,
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
     BreadcrumbSeparator,
+    Flex,
   } from "@chakra-ui/react"
 
 export default function Dashboard({ allPostsData }) {
   
     return (
-        <Grid
-            h="20px"
-            templateRows="repeat(2, 1fr)"
-            templateColumns="repeat(4, 1fr)"
-            gap={0}
-            >
-            <GridItem rowSpan={1} colSpan={4} ><Navbar home user/></GridItem>
-            <GridItem display={["none", "none","flex","flex","flex"]} h="827px" w="288px" rowSpan={1} colSpan={1} >
-                <SideMenu/>
-            </GridItem>
-            <GridItem borderRadius= "30px" className="main-container" float="left" bg="blue" >ibk</GridItem>
-          
-        </Grid>
-
-      
-      
-    )}
+      <Box>
+        <Flex w="100%">
+          <Navbar home user />
+        </Flex>
+        <Flex flexDirection="row">
+          <Flex display={["none", "none", "flex", "flex", "flex"]}>
+            <SideMenu />
+          </Flex>
+          <Flex w="100%">
+            <MainContainer />
+          </Flex>
+        </Flex>
+      </Box>
+    );}
