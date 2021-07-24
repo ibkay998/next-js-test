@@ -43,10 +43,10 @@ export default function Home({ allPostsData }) {
 
   return (
     <Flex className="homepage" display="flex" flexDir="column">
-      <SimpleGrid columns={2}>
+      <SimpleGrid columns={2} >
         <Text
           mt={[6]}
-          ml={[6]}
+          ml={"7%"}
           color="white"
           fontFamily="Roboto"
           fontSize="24px"
@@ -58,7 +58,7 @@ export default function Home({ allPostsData }) {
         <Breadcrumb mt={[6]} color="white" fontFamily="Roboto" fontSize="20px">
           <BreadcrumbItem className="breadguy">
             <BreadcrumbLink
-              pr={["none", "none", 30, 50, 100]}
+              pr={["none", "none", 30, 50, 130]}
               display={[
                 "none",
                 "none",
@@ -70,7 +70,7 @@ export default function Home({ allPostsData }) {
               Home
             </BreadcrumbLink>
             <BreadcrumbLink
-              pr={["none", "none", 30, 50, 100]}
+              pr={["none", "none", 30, 50, 130]}
               display={[
                 "none",
                 "none",
@@ -82,7 +82,7 @@ export default function Home({ allPostsData }) {
               Surveys
             </BreadcrumbLink>
             <BreadcrumbLink
-              pr={["none", "none", 30, 50, 100]}
+              pr={["none", "none", 30, 50, 130]}
               display={[
                 "none",
                 "none",
@@ -99,21 +99,30 @@ export default function Home({ allPostsData }) {
       </SimpleGrid>
       <Breadcrumb
         color="white"
-        ml={"40%"}
+        ml={["25%", "30%"]}
         display={["flex", "flex", "none", "none", "none"]}
       >
-        <BreadcrumbLink>Home</BreadcrumbLink>
-        <BreadcrumbLink>Surveys</BreadcrumbLink>
-        <BreadcrumbLink>About</BreadcrumbLink>
+        <BreadcrumbLink pr={30}>Home</BreadcrumbLink>
+        <BreadcrumbLink pr={30}>Surveys</BreadcrumbLink>
+        <BreadcrumbLink pr={30}>About</BreadcrumbLink>
       </Breadcrumb>
       <Box>
         <SimpleGrid columns={2}>
-          <Box>
-            <Text>Imagine no more </Text>
+          <Box ml="5%" mt={8}>
+            <Text
+              color="white"
+              font="Roboto"
+              fontSize={["15px", "18px", "18px", "22px", "24px"]}
+            >
+              Imagine No More{" "}
+            </Text>
             <Text
               fontFamily="Roboto"
               color="white"
-              fontSize="59px"
+              mt={["20px", "30px", "50px", "69px", "79px"]}
+              ml={["20px", "30px", "50px", "69px", "79px"]}
+              fontSize={["39px", "59px", "69px", "79px", "89px"]}
+              width={["100px", "157px", "230px", "230px", "230px"]}
               borderBottom="solid"
               borderBottomColor="white"
               pb="4px"
@@ -128,6 +137,7 @@ export default function Home({ allPostsData }) {
           </Box>
 
           <Image color="white" display="block" src="rightsection.png" />
+          <Image className="groupimg" src="group3.png"></Image>
         </SimpleGrid>
       </Box>
       <Box></Box>
