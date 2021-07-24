@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
 
   return (
     <Flex className="homepage" display="flex" flexDir="column">
-      <SimpleGrid columns={2} >
+      <SimpleGrid columns={2}>
         <Text
           mt={[6]}
           ml={"7%"}
@@ -106,40 +106,43 @@ export default function Home({ allPostsData }) {
         <BreadcrumbLink pr={30}>Surveys</BreadcrumbLink>
         <BreadcrumbLink pr={30}>About</BreadcrumbLink>
       </Breadcrumb>
-      <Box>
-        <SimpleGrid columns={2}>
-          <Box ml="5%" mt={8}>
-            <Text
-              color="white"
-              font="Roboto"
-              fontSize={["15px", "18px", "18px", "22px", "24px"]}
-            >
-              Imagine No More{" "}
-            </Text>
-            <Text
-              fontFamily="Roboto"
-              color="white"
-              mt={["20px", "30px", "50px", "69px", "79px"]}
-              ml={["20px", "30px", "50px", "69px", "79px"]}
-              fontSize={["39px", "59px", "69px", "79px", "89px"]}
-              width={["100px", "157px", "230px", "230px", "230px"]}
-              borderBottom="solid"
-              borderBottomColor="white"
-              pb="4px"
-            >
-              Pisurv
-            </Text>
 
-            <Button> Get Started</Button>
-            <Text color="white">
-              A platform where companies meet users to get surveys filled
-            </Text>
-          </Box>
+      <SimpleGrid columns={2}>
+        <Box ml="5%" mt={8}>
+          <Text
+            mt={["20px", "30px", "50px", "69px", "109px"]}
+            ml={["20px", "30px", "50px", "69px", "79px"]}
+            color="white"
+            font="Roboto"
+            fontSize={["15px", "18px", "18px", "22px", "24px"]}
+          >
+            Imagine No More{" "}
+          </Text>
+          <Text
+            fontFamily="Roboto"
+            color="white"
+            ml={["20px", "30px", "50px", "69px", "79px"]}
+            fontSize={["39px", "59px", "69px", "79px", "89px"]}
+            width={["100px", "157px", "230px", "230px", "230px"]}
+            borderBottom="solid"
+            borderBottomColor="white"
+            pb="4px"
+          >
+            Pisurv
+          </Text>
 
-          <Image color="white" display="block" src="rightsection.png" />
-          <Image className="groupimg" src="group3.png"></Image>
-        </SimpleGrid>
-      </Box>
+          <Button mt="32px" ml={["59px", "69px", "89px", "109px", "129px"]}>
+            Get Started
+          </Button>
+          <Text color="white">
+            A platform where companies meet users to get surveys filled
+          </Text>
+        </Box>
+
+        <Image color="white" display="block" src="rightsection.png" />
+        <Image className="groupimg" src="group3.png"></Image>
+      </SimpleGrid>
+
       <Box></Box>
     </Flex>
     // <Layout home>
