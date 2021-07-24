@@ -9,6 +9,7 @@ import firebase from '../firebase/firebase'
 import WriteToCloudFiresore from '../firebase/firestore'
 import {
   Image,
+  SimpleGrid,
   Text,
   Box,
   Spacer,
@@ -42,7 +43,7 @@ export default function Home({ allPostsData }) {
 
   return (
     <Flex className="homepage" display="flex" flexDir="column">
-      <Box w="100%" h="50px" display="flex" flexDir="row">
+      <SimpleGrid columns={2}>
         <Text
           mt={[6]}
           ml={[6]}
@@ -54,34 +55,80 @@ export default function Home({ allPostsData }) {
         >
           PiSurv
         </Text>
-        <Breadcrumb>
-          <BreadcrumbItem>
-            <BreadcrumbLink>Home</BreadcrumbLink>
-            <BreadcrumbLink>Surveys</BreadcrumbLink>
-            <BreadcrumbLink>About</BreadcrumbLink>
-            <BreadcrumbLink>Sign In</BreadcrumbLink>
+        <Breadcrumb mt={[6]} color="white" fontFamily="Roboto" fontSize="20px">
+          <BreadcrumbItem className="breadguy">
+            <BreadcrumbLink
+              pr={["none", "none", 30, 50, 100]}
+              display={[
+                "none",
+                "none",
+                "inline-block",
+                "inline-block",
+                "inline-block",
+              ]}
+            >
+              Home
+            </BreadcrumbLink>
+            <BreadcrumbLink
+              pr={["none", "none", 30, 50, 100]}
+              display={[
+                "none",
+                "none",
+                "inline-block",
+                "inline-block",
+                "inline-block",
+              ]}
+            >
+              Surveys
+            </BreadcrumbLink>
+            <BreadcrumbLink
+              pr={["none", "none", 30, 50, 100]}
+              display={[
+                "none",
+                "none",
+                "inline-block",
+                "inline-block",
+                "inline-block",
+              ]}
+            >
+              About
+            </BreadcrumbLink>
+            <BreadcrumbLink className="signin">Sign In</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
-      </Box>
+      </SimpleGrid>
+      <Breadcrumb
+        color="white"
+        ml={"40%"}
+        display={["flex", "flex", "none", "none", "none"]}
+      >
+        <BreadcrumbLink>Home</BreadcrumbLink>
+        <BreadcrumbLink>Surveys</BreadcrumbLink>
+        <BreadcrumbLink>About</BreadcrumbLink>
+      </Breadcrumb>
       <Box>
-        <Box w={["30%"]}>
-          <Text>Imagine no more </Text>
-          <Text
-            fontFamily="Roboto"
-            color="white"
-            fontSize="59px"
-            borderBottom="solid"
-            borderBottomColor="white"
-            pb="4px"
-          >
-            Pisurv
-          </Text>
-          <Text  color="white">
-            A platform where companies meet users to get surveys filled
-          </Text>
-          <Button> Get Started</Button>
-          <Image className="fancyimage" color="white" display="block" src="rightsection.png" />
-        </Box>
+        <SimpleGrid columns={2}>
+          <Box>
+            <Text>Imagine no more </Text>
+            <Text
+              fontFamily="Roboto"
+              color="white"
+              fontSize="59px"
+              borderBottom="solid"
+              borderBottomColor="white"
+              pb="4px"
+            >
+              Pisurv
+            </Text>
+
+            <Button> Get Started</Button>
+            <Text color="white">
+              A platform where companies meet users to get surveys filled
+            </Text>
+          </Box>
+
+          <Image color="white" display="block" src="rightsection.png" />
+        </SimpleGrid>
       </Box>
       <Box></Box>
     </Flex>

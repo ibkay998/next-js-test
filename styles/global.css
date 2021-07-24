@@ -34,22 +34,37 @@ img {
       
   }
 
-
-.homepage nav{
-  margin-top: 6px;
-  margin-left: 6px;
-  
-
+/* @media only screen and (min-width: 952px) {
+  .homepage nav a{
+  padding-left: 60px;
 }
+}
+
+@media only screen and (max-width: 952px) {
+  .homepage nav a{
+  padding-left: 30px;
+}
+}
+@media only screen and (max-width: 686px) {
+  .homepage nav a{
+  display: none;
+}
+} */
+
+@media only screen and (max-width: 768px) {
+  .signin{
+  padding-left: 60%;
+}
+}
+
+
+
+
 .homepage li{
   color: white;
-  padding-left: 15px;
   display:inline;
 }
-.fancyimage{
-  position: relative;
-  left: 35%
-}
+
 .homepage{
   min-height: 100%;
   
