@@ -123,7 +123,7 @@ export default function Home({ allPostsData }) {
             color="white"
             ml={["20px", "30px", "50px", "69px", "79px"]}
             fontSize={["39px", "59px", "69px", "79px", "89px"]}
-            width={["100px", "157px", "230px", "230px", "230px"]}
+            width={["120px", "169px", "237px", "237px", "250px"]}
             borderBottom="solid"
             borderBottomColor="white"
             pb="4px"

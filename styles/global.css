@@ -23,9 +23,7 @@ img {
   box-sizing: border-box;
 }
 
-.sidebar-items:not(:last-child) {
-  margin-bottom: 1.5em;
-}
+
 
 
   .main-container {
