@@ -61,7 +61,7 @@ export default function MainContainer({ children, user,home}) {
           </Text>
         </Box>
         <Box>ibk</Box>
-        <Box>ibk</Box>
+        <Box>{children}</Box>
       </Flex>
     );
     }
